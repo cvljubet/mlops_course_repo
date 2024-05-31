@@ -28,7 +28,6 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 This will create a mlflow.db file in the folder your run the command from. You should now be able to access the web UI by browsing to http://127.0.0.1:5000 (or the link I see after "Listening at:")
 
 **Note:** I have to make sure tu run the previous command in the same folder where I have the notebook where I will run the experiments.
-ASEGURARME DE QUE EJECUTE EL COMANDO EN LA MISMA CARPETA DONDE ESTÁ EL NOTEBOOK QUE EJECUTARÉ PARA HACER LOS EXPERIMENTOS
 
 If I want to shut down the ui that is currently running:\
 Kill the process\
