@@ -21,7 +21,7 @@ conda deactivate
 
 ## Running MLflow
 Once you've installed MLflow, you may access the MLflow web UI by running the mlflow ui command from a terminal using your Conda environment; however, you will need to provide a backend 
-in order to save and retrieve experiment data. We can use SQLite as a backend with the following command:\
+in order to save and retrieve experiment data. We can use SQLite as a backend with the following command:
 
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 
