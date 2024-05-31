@@ -32,7 +32,7 @@ I can edit config file to connect more easily to the VM:
 * Save changes
 * Connect to VM writing: mlops-course (or the name I decide)
 
-**Install anaconda in VM**\
+### Install anaconda in VM
 After connecting to virtual machine write in the terminal:\
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh (go to the website to copy the corresponding link)\
 bash Anaconda3-2022.05-Linux-x86_64.sh
@@ -40,7 +40,7 @@ bash Anaconda3-2022.05-Linux-x86_64.sh
 Update existing packages:\
 sudo apt update
 
-**Install Docker and Docker-compose**\
+**Install Docker and Docker-compose**
 * Add Docker's official GPG key:\
 sudo apt-get update\
 sudo apt-get install ca-certificates curl\
@@ -63,10 +63,21 @@ sudo groupadd docker\
 sudo usermod -aG docker $USER
 
 * Run Docker\
-docker run hello-world\
+docker run hello-world
 
 **Note:** If you get "It is required that your private key files are NOT accessible by others. This private key will be ignored." error, you should change permits on the downloaded file to protect your private key:
 chmod 400 name-of-your-private-key-file.pem
 
-**Connecting to VM from VS Code**
+### Connecting to VM from VS Code
+1. First start the VM, I can use the VSCode integrated terminal instead of the system terminal.
+2. Install the Remote-SSH extension.
+3. Click on the lower left corner (will be colored green), then in the upper bar of VSCode a list will be displayed.
+4. Choose "Connect to Host" > mlops-course (or the name of the connection).
+5. I can open the VM home with "open folder" and see all the folders and files that are in my VM.
 
+#### Using Jupyter notebook in VSCode
+I have to install the extension for jupyter notebook but must be installed in the VM not in my system, I don't remember exactly but I searched for the extension 
+in the VSCode Extensions tab being connected to the virtual machine (maybe install through SSH, something like that).
+
+
+   
