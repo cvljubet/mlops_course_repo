@@ -20,6 +20,7 @@ I'm gonna use a VM in AWS following the next steps:
 I can get the IP Address going to my instance in AWS and clicking under instance ID > copy the number under Public IPv4 address
 
 I can edit config file to connect more easily to the VM:
+* Close connection with "logout"
 * Open a new terminal
 * Write: nano .ssh/config
 * Write:
@@ -28,3 +29,17 @@ I can edit config file to connect more easily to the VM:
         User ubuntu
         IdentityFile /Users/constanzalalala/.ssh/key1.pem
         StrictHostKeyChecking no
+* Save changes
+* Connect to VM writing: mlops-course (or the name I decide)
+
+**Install anaconda in VM**
+After connecting to virtual machine write in the terminal:
+wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh (go to the website to copy the corresponding link)
+bash Anaconda3-2022.05-Linux-x86_64.sh
+
+Update existing packages:
+sudo apt update
+
+
+
+**Connecting to VM from VS Code**
