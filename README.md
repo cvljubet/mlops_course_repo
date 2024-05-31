@@ -13,3 +13,8 @@ I'm gonna use a VM in AWS following the next steps:
    * Key pair type: RSA
    * Private key file format: .pem
 5. After clicking on "Create key pair" button the .pem file will be downloaded.
+6. Place the key (.pem file) in .ssh folder (ex: /Users/constanzalalala/.ssh/key1.pem.
+7. Open a new terminal and write: cd .ssh/
+8. To connect to VM write:  ssh -i ~/Users/constanzalalala/.ssh/key1.pem ubuntu@3.23.96.130 --> the IP Address will change every time I start again the VM in AWS
+
+I can edit config file to connect 
