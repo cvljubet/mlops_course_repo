@@ -32,3 +32,8 @@ This will create a mlflow.db file in the folder your run the command from. You s
 If I want to shut down the ui that is currently running:\
 Kill the process\
 fuser -k 5000/tcp
+
+# Machine Learning lifecycle
+
+![image](https://github.com/cvljubet/mlops_course_repo/assets/45463413/c310c70c-5ee8-41c8-b10c-d6fd34161103)
+
