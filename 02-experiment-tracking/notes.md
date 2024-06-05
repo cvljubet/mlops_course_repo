@@ -37,3 +37,17 @@ fuser -k 5000/tcp
 
 ![image](https://github.com/cvljubet/mlops_course_repo/assets/45463413/c310c70c-5ee8-41c8-b10c-d6fd34161103)
 
+# Configuring MLflow
+* Backend Store
+  * Local filesystem
+  * SQLAlchemy compatible DB (e.g. SQLite)
+* Artifacts store
+  * Local filesystem
+  * Remote (e.g. S3 bucket, GCS bucket)
+* Tracking server
+  * No tracking server
+  * Localhost
+  * Remote
+
+
+
