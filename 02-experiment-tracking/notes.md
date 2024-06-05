@@ -38,16 +38,16 @@ fuser -k 5000/tcp
 ![image](https://github.com/cvljubet/mlops_course_repo/assets/45463413/c310c70c-5ee8-41c8-b10c-d6fd34161103)
 
 # Configuring MLflow
-* Backend Store
-  * Local filesystem
+* Backend Store (where mlflow will save metadata about my experiments)
+  * Local filesystem (by default if I don't configure a backend store)
   * SQLAlchemy compatible DB (e.g. SQLite)
-* Artifacts store
-  * Local filesystem
+* Artifacts store 
+  * Local filesystem (by default if I don't specify an artifact store)
   * Remote (e.g. S3 bucket, GCS bucket)
-* Tracking server
-  * No tracking server
-  * Localhost
-  * Remote
+* Tracking server (decide if I require to run a tracking server)
+  * No tracking server (Ex. I'm by myself in a competition)
+  * Localhost (Ex. a team)
+  * Remote (Ex. a team
 
 
 
