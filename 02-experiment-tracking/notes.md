@@ -31,7 +31,7 @@ This will create a mlflow.db file in the folder your run the command from. You s
 
 If I want to shut down the ui that is currently running:\
 Kill the process\
-fuser -k 5000/tcp
+pkill -f gunicorn
 
 # Machine Learning lifecycle
 
