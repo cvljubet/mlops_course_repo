@@ -13,7 +13,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
 import mlflow
-mlflow.set_tracking_uri("http://127.0.0.1:5000") # Here mlflow will be running and tracking
+mlflow.set_tracking_uri("cd ..
+                        ") # Here mlflow will be running and tracking
 mlflow.set_experiment("hw-2")
 mlflow.sklearn.autolog()
 
