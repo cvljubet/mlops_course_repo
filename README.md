@@ -36,8 +36,9 @@ I can edit config file to connect more easily to the VM:
 * Connect to VM writing: mlops-course (or the name I decide)
 
 ### Install anaconda in VM
-After connecting to virtual machine write in the terminal:\
+After connecting to virtual machine write in the terminal to download Anaconda:\
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh (go to the website to copy the corresponding link)\
+Then install:\
 bash Anaconda3-2022.05-Linux-x86_64.sh
 
 Update existing packages:\
