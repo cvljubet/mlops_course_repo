@@ -4,6 +4,9 @@ This is a repo for the MlOps zoomcamp course.
 Link of the course:\
 https://github.com/DataTalksClub/mlops-zoomcamp
 
+mlflow server --backend-store-uri sqlite:///backend.db --default-artifact-root ./artifacts_local
+
+
 ## Environment set up
 I'm gonna use a VM in AWS following the next steps:
 
