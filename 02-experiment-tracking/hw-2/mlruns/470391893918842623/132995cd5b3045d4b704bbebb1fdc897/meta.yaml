@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ubuntu/my_repos/mlops_course_repo/02-experiment-tracking/hw-2/mlruns/470391893918842623/132995cd5b3045d4b704bbebb1fdc897/artifacts
+end_time: 1717782061052
+entry_point_name: ''
+experiment_id: '470391893918842623'
+lifecycle_stage: active
+run_id: 132995cd5b3045d4b704bbebb1fdc897
+run_name: auspicious-elk-322
+run_uuid: 132995cd5b3045d4b704bbebb1fdc897
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717781993278
+status: 3
+tags: []
+user_id: ubuntu
