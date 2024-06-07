@@ -77,7 +77,8 @@ sudo apt update
   If it already exists we do:\
   sudo usermod -aG docker $USER\ # Then we have to logout and log back to the VM\
   If I get a message like "permission denied while trying to connect to the Docker daemon socket...." I have to do the next OUTSIDE the VM, in my own machine:\
-  chmod 400 .ssh/keyname.pem
+  chmod 400 .ssh/keyname.pem\
+  And then restart VM
 
 **NOTE**: The next steps related with Docker were in the course notes but were not mentioned in the video, I based on the video to write the previous steps and I'm not sure in what cases I have to do the next steps, It seems to be a way to do the same but just copying and pasting that code, anyway I'll let them  here in case:
   
