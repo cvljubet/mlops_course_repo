@@ -8,14 +8,13 @@ from mlflow.tracking import MlflowClient
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 
-HPO_EXPERIMENT_NAME = "random-forest-hyperopt"
-EXPERIMENT_NAME = "random-forest-best-models"
+HPO_EXPERIMENT_NAME = "random-forest-hyperopt" # name of past experiment (when we did hyperparam opt)
+EXPERIMENT_NAME = "random-forest-best-models" # name of new experiment
 RF_PARAMS = ['max_depth', 'n_estimators', 'min_samples_split', 'min_samples_leaf', 'random_state']
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 mlflow.set_experiment(EXPERIMENT_NAME)
 mlflow.sklearn.autolog()
-
 
 def load_pickle(filename):
     with open(filename, "rb") as f_in:
@@ -56,7 +55,7 @@ def train_and_log_model(data_path, params):
 )
 def run_register_model(data_path: str, top_n: int):
 
-    client = MlflowClient()
+    client = MlflowClient()  # no input cause tracking uri was already set up MLFLOW_TRACKING_URI = "http://127.0.0.1:5000"
 
     # Retrieve the top_n model runs and log the models
     experiment = client.get_experiment_by_name(HPO_EXPERIMENT_NAME)
@@ -72,10 +71,18 @@ def run_register_model(data_path: str, top_n: int):
     # Select the model with the lowest test RMSE
     experiment = client.get_experiment_by_name(EXPERIMENT_NAME)
     # best_run = client.search_runs( ...  )[0]
-
+    best_run = client.search_runs(
+        experiment_ids=experiment.experiment_id,
+        run_view_type=ViewType.ACTIVE_ONLY,
+        max_results=top_n, #5
+        order_by=["metrics.test_rmse ASC"][0] # we keep with the first one (the one with best performance)
+    )
     # Register the best model
     # mlflow.register_model( ... )
-
+    run_id = best_run.info.run_id
+    model_uri = f"runs:/{run_id}/model"
+    mlflow.register_model(model_uri=model_uri, name="best_model_after_opt")
+ 
 
 if __name__ == '__main__':
     run_register_model()
