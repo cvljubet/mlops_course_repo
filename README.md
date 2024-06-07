@@ -46,19 +46,26 @@ sudo apt update
 
 **Install Docker and Docker-compose**
 * Open a terminal and write:\
-  ssh mlops-course\ (if I'm aleady connected to the VM this line is not necessary)
-  sudo apt install docker.io  --> This is not working currently, maybe was deprecated\
+  ssh mlops-course (if I'm aleady connected to the VM this line is not necessary)\
+  sudo apt install docker.io\
   If previous line doesn't work first run this:\
   sudo apt update\
   Create a folder\
   mkdir soft\
   cd soft\
-  Look in explorar for "docker-compose github" and then click on "Releases (latest)"\
+  Search in explorer for "docker-compose github" and then click on "Releases (latest)"\
   wget https://github.com/docker/compose/releases/download/v2.27.1/docker-compose-linux-x86_64 -O docker-compose # download and give the name docker-compose\
   Make docker-compose executable:\
   chmod +x docker-compose\
   In order to access to soft folder from any location we do:\
   cd .. # First out from soft folder\
+  nano .bashrc\
+  At the end of the file that will be opent write:\
+  export PATH="${HOME}/soft:${PATH}"    # with thise, everything that is inside soft folder will be in my path and I can execute it from anywhere\
+  Run the previous modified file:\
+  source .bashrc\
+  which docker-compose # I will see location\
+  
   
   
 
