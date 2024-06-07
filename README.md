@@ -79,7 +79,7 @@ sudo apt update
   If I get a message like "permission denied while trying to connect to the Docker daemon socket...." I have to do the next OUTSIDE the VM, in my own machine:\
   chmod 400 .ssh/keyname.pem
 
-**NOTE**: The next steps related with Docker were in the course notes but were not mentioned in the video, I based on the video to write the previous steps and I'm not sure in what cases I have to do the next steps, but I'll let them  here in case:
+**NOTE**: The next steps related with Docker were in the course notes but were not mentioned in the video, I based on the video to write the previous steps and I'm not sure in what cases I have to do the next steps, It seemsw to be a way to do the same but copying and pasting that code, anyway I'll let them  here in case:
   
 * Add Docker's official GPG key:\
 sudo apt-get update\
