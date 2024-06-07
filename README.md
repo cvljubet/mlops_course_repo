@@ -56,7 +56,8 @@ sudo apt update
   Search in explorer for "docker-compose github" and then click on "Releases (latest)"\
   wget https://github.com/docker/compose/releases/download/v2.27.1/docker-compose-linux-x86_64 -O docker-compose # download and give the name docker-compose\
   Make docker-compose executable:\
-  chmod +x docker-compose\
+  chmod +x docker-compose
+  
   In order to access to soft folder from any location we do:\
   cd .. # First out from soft folder\
   nano .bashrc\
@@ -64,11 +65,20 @@ sudo apt update
   export PATH="${HOME}/soft:${PATH}"    # with thise, everything that is inside soft folder will be in my path and I can execute it from anywhere\
   Run the previous modified file:\
   source .bashrc\
-  which docker-compose # I will see location\
+  which docker-compose # I will see location
   
-  
-  
+* Trying to run docker:
+  docker run hello-world\
+  If it doesn't work we have to run it with sudo:\
+  sudo docker run hello-world\
 
+  * If I don't want to use "sudo" everytime I run docker I can add my user to dockergroup
+  sudo groupadd docker\
+  If it already exists we do:\
+  sudo usermod -aG docker $USER\ # Then we have to logout and log back to the VM\
+  If I get a message like "permission denied while trying to connect to the Docker daemon socket...." I have to do the next OUTSIDE the VM, in my own machine:\
+  chmod 400 .ssh/keyname.pem
+  
 * Add Docker's official GPG key:\
 sudo apt-get update\
 sudo apt-get install ca-certificates curl\
