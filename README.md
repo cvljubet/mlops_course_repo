@@ -45,6 +45,23 @@ Update existing packages:\
 sudo apt update
 
 **Install Docker and Docker-compose**
+* Open a terminal and write:\
+  ssh mlops-course\ (if I'm aleady connected to the VM this line is not necessary)
+  sudo apt install docker.io  --> This is not working currently, maybe was deprecated\
+  If previous line doesn't work first run this:\
+  sudo apt update\
+  Create a folder\
+  mkdir soft\
+  cd soft\
+  Look in explorar for "docker-compose github" and then click on "Releases (latest)"\
+  wget https://github.com/docker/compose/releases/download/v2.27.1/docker-compose-linux-x86_64 -O docker-compose # download and give the name docker-compose\
+  Make docker-compose executable:\
+  chmod +x docker-compose\
+  In order to access to soft folder from any location we do:\
+  cd .. # First out from soft folder\
+  
+  
+
 * Add Docker's official GPG key:\
 sudo apt-get update\
 sudo apt-get install ca-certificates curl\
