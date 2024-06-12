@@ -53,9 +53,9 @@ Mage simplifies MLOps by providing a unified platform for data pipelining, model
 Supposing we have a project with Mage:
 Launch Mage and the database service (PostgreSQL):\
 ./scripts/start.sh\
-A web site interface will open (in localhost), then do this:.\
+A web site interface will open (in localhost), then do this:
 * Click on "Command center button".
 * Write "text editor" and open.
-* What I edit in this editor will be reflected in my system (my machine), once I save it.
+* What I edit in this editor will be reflected in my system (in my host machine), once I save it.
 
 
