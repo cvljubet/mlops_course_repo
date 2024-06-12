@@ -51,7 +51,11 @@ Mage simplifies MLOps by providing a unified platform for data pipelining, model
 
 # Running Mage on Windows with Docker-Compose
 Supposing we have a project with Mage:
-Launch Mage and the database service (PostgreSQL):
-./scripts/start.sh
+Launch Mage and the database service (PostgreSQL):\
+./scripts/start.sh\
+A web site interface will open (in localhost), then do this:.\
+* Click on "Command center button".
+* Write "text editor" and open.
+* What I edit in this editor will be reflected in my system (my machine), once I save it.
 
 
