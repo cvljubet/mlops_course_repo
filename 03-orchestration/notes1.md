@@ -50,5 +50,8 @@ Mage helps prepare data, train machine learning models, and deploy them with acc
 Mage simplifies MLOps by providing a unified platform for data pipelining, model development, deployment, versioning, CI/CD, and maintenance, allowing developers to focus on model creation while improving efficiency and collaboration.
 
 # Running Mage on Windows with Docker-Compose
+Supposing we have a project with Mage:
+Launch Mage and the database service (PostgreSQL):
+./scripts/start.sh
 
 
