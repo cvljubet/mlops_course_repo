@@ -22,6 +22,17 @@ Some tools specifics to machine learning:
 * Kubeflow pipelines
 * MLflow pipelines
 
+# How Mage helps MLOps
+## 1. Data preparation
+Mage offers features to build, run, and manage data pipelines for data transformation and integration, including pipeline orchestration, notebook environments, data integrations, and streaming pipelines for real-time data.
+
+## 2. Training and deployment
+Mage helps prepare data, train machine learning models, and deploy them with accessible API endpoints.
+
+## 3. Standardize complex processes
+Mage simplifies MLOps by providing a unified platform for data pipelining, model development, deployment, versioning, CI/CD, and maintenance, allowing developers to focus on model creation while improving efficiency and collaboration.
+
+
 # Running Mage on Windows with Docker-Compose
 
 
