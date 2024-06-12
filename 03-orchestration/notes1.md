@@ -58,4 +58,9 @@ A web site interface will open (in localhost), then do this:
 * Write "text editor" and open.
 * What I edit in this editor (that is, the changes I make inside Mage) will be reflected in my host machine, once I save it. 
 
+# Run example pipeline
+1. Open http://localhost:6789 in your browser.
+2. In the top left corner of the screen next to the Mage logo and mlops project name, click the project selector dropdown and choose the unit_0_setup option.
+3. Click on the pipeline named example_pipeline.
+4. Click on the button labeled Run @once.
 
