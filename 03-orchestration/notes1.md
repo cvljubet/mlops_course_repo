@@ -56,6 +56,6 @@ Launch Mage and the database service (PostgreSQL):\
 A web site interface will open (in localhost), then do this:
 * Click on "Command center button".
 * Write "text editor" and open.
-* What I edit in this editor will be reflected in my system (in my host machine), once I save it.
+* What I edit in this editor (that is, the changes I make inside Mage) will be reflected in my system (in my host machine), once I save it. 
 
 
