@@ -1,5 +1,5 @@
 # Setup
-# Remove git folder
+## Remove git folder
 
 1. Clone repo:
 
