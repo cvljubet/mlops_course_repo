@@ -168,3 +168,12 @@ cython_debug/
 # Models and artifacts
 *.yaml
 *.pkl 
+
+# Mage
+.mage_temp_profiles
+.terraform
+.terraform.*
+.variables/
+docker-compose.override.yml
+logs/
+mage_data/
